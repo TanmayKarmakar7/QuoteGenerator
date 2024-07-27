@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="quote-box">
+        <h2><span>'Quote'</span> Generator</h2>
+        <blockquote class="quote">Loading...</blockquote>
+        <span class="author">~ Loading...</span>
+        <div class="btn-container">
+            <div class="btn-1">
+                <button class="speakBtn"><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></button>
+                <button class="copyBtn"><i class="fa-solid fa-copy" style="color: #ffffff;"></i></button>
+            </div>
+            <div class="btn-2">
+                <button onclick="getQuote(api_url)">New Quote<i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

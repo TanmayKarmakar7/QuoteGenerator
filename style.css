@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(245, 113, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-box{
+    max-width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    padding: 30px 40px;
+}
+.quote-box h2{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: rgb(42, 42, 42);
+    position: relative;
+}
+.quote-box h2 span{
+    color: rgb(255, 0, 85);
+}
+.quote-box blockquote{
+    font-size: 20px;
+    /* font-family: "Playwrite HR Lijeva", cursive; */
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+    color: #494848;
+    font-style: italic;
+    max-width: 600px;
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+.author{
+    display: block;
+    margin: 20px 15px 20px 0;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    font-family: cursive;
+}
+.btn-container{
+    border-top: 1px solid rgba(71, 71, 71, 0.474);
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-container .btn-1 button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.btn-container .btn-2 button{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poetsen One", sans-serif;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.btn-2 button i{
+    height: 10px;
+    margin-left: 5px;
+}
+button:first-child{
+    background: rgb(255, 27, 103);
+}
+button:first-child:hover{
+    background: rgb(219, 20, 86);
+}
+button:last-child{
+    background: dodgerblue;
+}
+button:last-child:hover{
+    background: rgb(21, 118, 215);
+}
+
+
+@media only screen and (width < 720px){
+    .quote-box{
+        max-width: 90%;
+    }
+}
+@media only screen and (width < 400px){
+    .quote-box h2{
+        font-size: 25px;
+    }
+    .quote-box blockquote{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    .btn-container button{
+        font-size: 12px;
+    }
+}
+@media only screen and (width < 360px){
+    .btn-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
